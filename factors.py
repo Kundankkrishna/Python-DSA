@@ -1,25 +1,31 @@
 # count and return the factors of a number.
 
-import math,time
+import math
+import time
 num = int(input("Enter a number: "))
-factors = []
+factors1 = []
+factors2 = []
 start_time = time.time()
 
-# # optimised solution 
+# optimised solution
+
 
 def countFactors(x):
     count = 0
     root = int(math.sqrt(x))
-    for i in range(1,root+1):
-        if x%i == 0:
-            if x/i ==i:
-                factors.append(i)
+    for i in range(1, root+1):
+        if x % i == 0:
+            if x/i == i:
+                factors1.append(i)
                 count = count+1
             else:
-                factors.append(i)
-                factors.append(int(x/i))
+                factors1.append(i)
+                factors2.append(int(x/i))
                 count = count+2
-    return count,factors
+    factors2.reverse()
+    factors = factors1 + factors2
+    return count, factors
+
 
 print(countFactors(num))
 
@@ -56,4 +62,4 @@ print(countFactors(num))
 
 end_time = time.time()
 exec_time = end_time - start_time
-print("Execution time = ",exec_time)
+print("Execution time = ", exec_time)
