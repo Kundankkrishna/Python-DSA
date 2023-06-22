@@ -13,15 +13,17 @@
 
 num = int(input("enter number: "))
 
+
 def rootFinder(x):
-    i =1
+    i = 1
     ans = 1
     while i*i <= x:
         ans = i
-        i +=1
+        i += 1
     if ans*ans == x:
         return ans
     else:
         return "Not a perfect square"
+
 
 print(rootFinder(num))
