@@ -1,5 +1,5 @@
 # You are given an integer A. You have to tell whether it is a perfect number or not.
-
+# In this edit PEP8 is enforced.
 import math
 
 
