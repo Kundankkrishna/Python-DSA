@@ -1,5 +1,7 @@
 # Check if a number is prime or not
 
+# This version of the file enforces PEP8.
+
 import math
 num = int(input("Enter number: "))
 
