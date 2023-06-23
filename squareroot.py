@@ -23,7 +23,7 @@ def rootFinder(x):
     if ans*ans == x:
         return ans
     else:
-        return "Not a perfect square"
+        return x, "is not a perfect square"
 
 
 print(rootFinder(num))
