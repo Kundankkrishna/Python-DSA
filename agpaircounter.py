@@ -54,7 +54,7 @@ def countagpair(arr):
             acount += 1
         if arr[i] == "g":
             ans += acount
-    return ans
+    return ans %(10**9 + 7)
 
 
 inparr = "abcggaadfjrthagthga"
